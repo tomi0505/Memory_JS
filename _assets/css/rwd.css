@@ -1,0 +1,26 @@
+@media(max-width: 768px) {
+
+	.header {
+		flex-direction: column;
+	}
+
+	.header p {
+		display: none;
+		margin: 10px;
+	}
+
+	.header .logo {
+		margin: 10px;
+	}
+
+	.header #slideBtn {
+		display: none;
+	}
+
+	.squares div {
+		flex-basis: 25%;
+        flex-grow: 1;
+        background-size: 50% 50%;
+    }
+    
+}

@@ -1,0 +1,205 @@
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+
+.squares {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.header {
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: top 0.5s ease-in-out;
+	box-sizing: border-box;
+	background: #ffcc00;
+}
+
+/*LOGO*/
+.logo {
+	padding: 5px 15px;
+	display: flex;
+	border-radius: 20px;
+	background: #99ccff;
+}
+
+.logo h1 {
+	margin-right: 15px;
+	text-align: center;
+}
+
+#startBtn {
+	font-size: 1em;
+	font-weight: bold;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+#startBtn:hover,
+#retryBtn:hover,
+#cancelBtn:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*COUNTER*/
+.counter,
+.winCounter {
+	padding: 2px 6px;
+	font-weight: bold;
+	border-radius: 20px;
+	background: #ffffff;
+}
+
+/*SLIDE_BTN*/
+#slideBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9em;
+}
+
+#slideBtn::before {
+	content: "";
+	margin-right: 5px;
+	width: 32px;
+	height: 32px;
+	background-color: #ffffff;
+	background-image: url(../img/m_key.png);
+}
+
+#slideBtn:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.squares div {
+	flex-basis: 20%;
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+	background: #029402;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*RESULT*/
+.result {
+	display: none;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translateY(-50%) translateX(-50%);
+	border: 2px solid #000000;
+	box-sizing: border-box;
+	background: #ffcc00;
+}
+
+.result h2 {
+	margin: 20px;
+	font-size: 1.3em;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.result p {
+	margin-bottom: 15px;
+	font-size: 0.9em;
+}
+
+.result #retryBtn,
+.result #cancelBtn {
+	margin: 10px;
+	padding: 10px 30px;
+	color: #ffffff;
+	border-radius: 20px;
+	background: #99ccff;
+}
+
+.result #retryBtn {
+	font-weight: bold;
+}
+
+.result #cancelBtn {
+	margin-top: 0;
+}
+
+.block {
+	display: block;
+}
+
+
+@media(orientation: portrait) {
+	.squares div {
+		flex-basis: 25%;
+		flex-grow: 1;
+	}
+
+}
+
+
+/*ELEMENTS*/
+.squares .android {
+	background-image: url("../img/android.png");
+}
+
+.squares .apple {
+	background-image: url("../img/apple.png");
+}
+
+.squares .beats {
+	background-image: url("../img/beats.png");
+}
+
+.squares .hitachi {
+	background-image: url("../img/hitachi.png");
+}
+
+.squares .hp {
+	background-image: url("../img/hp.png");
+}
+
+.squares .huawei {
+	background-image: url("../img/huawei.png");
+}
+
+.squares .ibm {
+	background-image: url("../img/ibm.png");
+}
+
+.squares .jvc {
+	background-image: url("../img/jvc.png");
+}
+
+.squares .lg {
+	background-image: url("../img/lg.png");
+}
+
+.squares .xiaomi {
+	background-image: url("../img/xiaomi.png");
+}
+
+.squares .win {
+	background-color: #e3e3e3;
+}
+
+.squares .hidden {
+	background: #029402;
+}
