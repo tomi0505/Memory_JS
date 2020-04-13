@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 	}, false);
 
 	cancelBtn.addEventListener("click", () => {
-		window.location.href = "about:home";
+    window.location.reload();
 	}, false);
 
 	// COONFIDENT_HEIGHT_SQUARES_IS_100VH
